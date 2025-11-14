@@ -170,3 +170,69 @@ Link for the simulation to see output saved in:
 
 ---
 
+# 🔦 Day 3 — Multiple LEDs & Pattern Logic
+
+Today I worked with **multiple LEDs** and learned how to create light animation patterns using Arduino.  
+This step builds logical thinking needed for future topics like sequencing, motor control, buzzer tones, and real output systems.
+
+---
+
+### 🔧 What I Learned
+
+- How to control multiple outputs using Arduino pins
+- Use of **loops and arrays** to clean repeated LED code
+- Creating patterns like:
+  - Simultaneous blink (basic)
+  - Sequential blink
+  - Ping-Pong / Knight Rider effect
+- Structured code approach (no repetition, scalable logic)
+
+---
+
+### 🧪 Circuit Overview
+
+| LED | Arduino Pin | Resistor |
+|-----|-------------|-----------|
+| LED1 | D9 | 220Ω |
+| LED2 | D8 | 220Ω |
+| LED3 | D7 | 220Ω |
+
+All cathodes are connected to **GND through resistors**.
+
+📌 LED Rule:  
+**Anode (long leg) → Arduino pin**  
+**Cathode (short leg) → resistor → GND**
+
+---
+
+### 🧠 Behavior Examples
+
+| Pattern Name | Description |
+|--------------|------------|
+| Blink All | All LEDs turn ON → wait → OFF → repeat |
+| Sequential | LED1 → LED2 → LED3 → repeat |
+| Ping-Pong | 1 → 2 → 3 → 2 → 1 → repeat |
+
+---
+
+### 📄 Code Files
+
+| File | Function |
+|------|----------|
+| `pattern_basic.ino` | Turns all LEDs ON/OFF together |
+| `pattern_pingpong.ino` | Knight Rider / Ping-Pong animation |
+
+---
+
+📷 Circuit Image will be inside the **images/** folder.
+
+📄 Detailed notes: → [Notes.md](./Day03_Led_Patterns/Notes.md)
+
+💻 Simulation link (optional): → `simulations/tinkercad_link.txt`
+👉 [tinkercad_link.txt](./Day03_Led_Patterns/Code/tinkercad_link.txt)
+
+---
+
+📅 Date: **12 November 2025**  
+⏳ Progress: **3 / 30 Days Complete**  
+

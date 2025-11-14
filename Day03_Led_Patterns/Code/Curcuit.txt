@@ -1,0 +1,5 @@
+| Pattern Name | Description |
+|--------------|------------|
+| Blink All | All LEDs turn ON → wait → OFF → repeat |
+| Sequential | LED1 → LED2 → LED3 → repeat |
+| Ping-Pong | 1 → 2 → 3 → 2 → 1 → repeat |
