@@ -267,10 +267,19 @@ I used a **passive buzzer**, which allowed sound frequency changes using:
 ```cpp
 tone(pin, frequency);
 
-📄 Detailed notes: → [Notes.md](./Day04_Interfacing_Buzzer&Switch/Notes.md)
+---
 
-💻 Simulation link (optional): → `simulations/tinkercad_link.txt`
+📄 Detailed Notes: → [Notes.md](./Day04_Interfacing_Buzzer&Switch/Notes.md)
+
+🔧 Arduino Code Files: → `/code/`
+
+💻 Simulation Link (optional): → `simulations/tinkercad_link.txt`  
 👉 [tinkercad_link.txt](./Day04_Interfacing_Buzzer&Switch/Code/tinkercad_link.txt)
+
+🖼 Circuit Image: → `images/circuit.png`
+👉 [View Circuit](./Day04_Interfacing_Buzzer&Switch/Images/)
+
+---
 
 📅 Date: **13 November 2025**  
 ⏳ Progress: **4 / 30 Days Complete**  
