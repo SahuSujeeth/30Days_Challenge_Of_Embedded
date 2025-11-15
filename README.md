@@ -236,3 +236,43 @@ All cathodes are connected to **GND through resistors**.
 📅 Date: **12 November 2025**  
 ⏳ Progress: **3 / 30 Days Complete**  
 
+---
+# 🔔 Day 04 — Buzzer Interfacing with Push Button & Slide Switch
+
+Today’s focus was understanding how to generate sound using a **buzzer** and control it using different types of switches.  
+This helped connect **input (switch)** with **output (sound)** — forming real embedded interaction.
+
+---
+
+## 🎯 What I Learned
+
+✔ How buzzers work (active vs passive)  
+✔ How to control sound using Arduino  
+✔ How to use a **push button** as an input device  
+✔ How to use a **slide switch** for stable ON/OFF control  
+✔ How to apply **conditional logic (if/else)** based on switch states  
+✔ How tone frequency affects how sound is perceived  
+
+---
+
+## 🎧 Buzzer Types
+
+| Type | Requires tone()? | Sound Type | Use Case |
+|------|------------------|------------|----------|
+| **Active Buzzer** | ❌ No | Fixed beep | Alerts / alarms |
+| **Passive Buzzer** | ✔ Yes | Programmable tone | Music, variable sounds |
+
+I used a **passive buzzer**, which allowed sound frequency changes using:
+
+```cpp
+tone(pin, frequency);
+
+📄 Detailed notes: → [Notes.md](./Day04_Interfacing_Buzzer&Switch/Notes.md)
+
+💻 Simulation link (optional): → `simulations/tinkercad_link.txt`
+👉 [tinkercad_link.txt](./Day04_Interfacing_Buzzer&Switch/Code/tinkercad_link.txt)
+
+📅 Date: **13 November 2025**  
+⏳ Progress: **4 / 30 Days Complete**  
+
+
