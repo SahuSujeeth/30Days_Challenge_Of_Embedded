@@ -463,6 +463,8 @@ Learned:
 ➡ **Day 06 Completed**  
 🔜 Next: Day 07 — Week-1 Reflection & LinkedIn Update
 
+nothing has been pushed today because of i have semester exam... see you very soon.
+
 
 
 
