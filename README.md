@@ -463,6 +463,35 @@ Learned:
 ➡ **Day 06 Completed**  
 🔜 Next: Day 07 — Week-1 Reflection & LinkedIn Update
 
+
+# 🧠 Day 08 — Interrupts & Practical Applications
+
+Today’s learning focused on understanding how **hardware interrupts** work in embedded systems and how they help microcontrollers respond instantly to real-time events. Instead of continuously checking a pin state using polling, interrupts allow the system to **pause the main program**, execute a short task, and then continue from where it stopped — improving efficiency and responsiveness.
+
+---
+
+## 🚦 What I Learned Today
+
+### 🔹 1. Polling vs Interrupts
+- **Polling** continuously checks the input state in the loop (slow and inefficient).
+- **Interrupts** react instantly when a trigger event occurs (button press, sensor output, communication event, etc.).
+
+### 🔹 2. Types of Interrupt Signals (Arduino)
+- **LOW**
+- **CHANGE**
+- **RISING**
+- **FALLING**
+
+Example usage:
+
+```cpp
+attachInterrupt(digitalPinToInterrupt(2), handlerFunction, RISING);
+
+📄 Detailed Notes → `[Notes.md](./Day08_Interrupts%20_appilcations/Notes.md)`  
+💻 Simulation Links → `simulations/tinkercad_links.txt`  
+👉 [tinkercad_link.txt](./Day08_Interrupts%20_appilcations/Code/tinkercad.txt)
+🖼 Wiring Diagrams → `/images/`[iamges](./Day08_Interrupts%20_appilcations/Images/)
+
 nothing has been pushed today because of i have semester exam... see you very soon.....
 
 

@@ -1,0 +1,97 @@
+Practical Example: Toggling an LED Using a Push Button and Interrupt
+Problem Statement
+We want to use a push button as an interrupt:
+
+When the button is pressed, the LED toggles its state.
+If the LED is OFF, pressing the button turns it ON.
+If the LED is ON, pressing the button turns it OFF.
+The interrupt ensures that the LED responds instantly without delay
+Now Start with the project:
+In this Arduino project, we'll utilize interrupts to handle button presses effectively. The setup consists of an Arduino board, a red LED, and a push button. When the button is pressed, the LED will toggle its state (on or off) accordingly. We'll explore the hardware connections, write the necessary code, and explain the functionality in detail.
+
+Problem Statement:
+Scenario:
+
+The objective is to create a system where pressing a push button toggles the state of a red LED connected to an Arduino board. Initially, the LED is off. When the button is pressed, the LED turns on, and when pressed again, it turns off. We'll achieve this functionality using interrupts to respond instantly to button presses without delay.
+
+Hardware Setup:
+Required Components
+Arduino UNO
+Breadboard
+Push Button
+Red LED
+220Ω Resistor
+Jumper Wires
+Circuit Diagram
+Connections:
+
+Push Button:
+One leg to Pin 2 (Interrupt 0).
+The other leg to GND.
+Red LED:
+Anode (long leg) → Pin 13 via 220Ω resistor.
+Cathode (short leg) → GND.
+Code Implementation:
+
+Initialize the button pin as an input with an internal pull-up resistor enabled.
+Attach an interrupt to the button pin to trigger on the falling edge (button press).
+Define an interrupt service routine (ISR) that toggles the state of the LED.
+Inside the main loop, perform other tasks while waiting for button presses.
+Explanation on Image:
+Display a schematic diagram or photo of the Arduino setup with the push button, red LED, and their connections clearly labeled.
+
+interrupt
+Setup of project
+Annotate the image to indicate the connection of the push button to digital pin 2 and the LED to digital pin 13.
+
+Test and Debug:
+
+Upload the code to the Arduino board and observe the behavior.
+Press the button to trigger interrupts and verify that the LED toggles its state accordingly.
+
+
+---
+
+In this practical application, we'll design an automated alarm system using interrupts. The system will consist of a green LED, which indicates normal operation, a push button to trigger an external event, a red LED for alarm indication, and a buzzer for auditory alert. We'll utilize interrupts to efficiently handle the external event without continuous polling, enhancing the system's responsiveness and efficiency.
+
+The system consists of:
+
+A green LED indicating normal operation.
+A push button acting as an external interrupt.
+A red LED representing an alarm state.
+A buzzer providing an auditory alert.
+We will configure the push button as an interrupt source, ensuring that the microcontroller immediately responds to events without the need for continuous polling.
+
+Problem Statement:
+Scenario:
+The green LED remains ON in normal operation.
+Pressing the push button (interrupt trigger) will:
+Turn OFF the green LED.
+Turn ON the red LED.
+Activate the buzzer.
+Pressing the button again will:
+Turn OFF the red LED and buzzer.
+Turn ON the green LED (restoring the normal state).
+This simulates a real-world alarm system, such as:
+
+Fire alarms (where a button triggers an alert).
+Traffic lights (switching between signals manually).
+Security systems (activating/deactivating an alert).
+Solution Steps:
+Hardware Setup:
+Power Connections:
+Connect 5V from the Arduino to the positive rail of the breadboard.
+Connect GND from the Arduino to the negative rail of the breadboard.
+Green LED (Normal Operation Indicator):
+Connect the cathode (short leg) to GND.
+Connect the anode (long leg) via a 220Ω resistor to Arduino Pin 4.
+Push Button (Interrupt Trigger):
+One pin of the push button to Pin 2 (interrupt pin).
+The other pin to 5V.
+A pull-down resistor (10kΩ) from Pin 2 to GND to avoid floating states.
+Red LED (Alarm Indicator):
+Cathode to GND.
+Anode via 220Ω resistor to Pin 13.
+Buzzer (Auditory Alert):
+Negative (-) to GND.
+Positive (+) to Pin 8.

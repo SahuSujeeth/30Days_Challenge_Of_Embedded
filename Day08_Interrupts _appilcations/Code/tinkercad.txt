@@ -1,0 +1,4 @@
+1.Arduino interrupts
+https://www.tinkercad.com/things/0pTeiabxBKZ-arduino-interrupts?sharecode=akOyzuv20rZQI2slpW2nsDBQJwa8I4uxBxobIvxbvXs
+2.Practical interrupts for the arduino real case..
+...
