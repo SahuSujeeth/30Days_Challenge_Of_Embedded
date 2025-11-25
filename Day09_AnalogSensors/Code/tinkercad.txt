@@ -1,0 +1,6 @@
+1.Interfacing analog temp sensor to arduino.
+https://www.tinkercad.com/things/8Sf6cdjKVQ2-interfacing-analog-temp-sensor-to-arduino?sharecode=undefined
+2.LDR sensor to arduino 
+https://www.tinkercad.com/things/kMaKfb4kkJJ-ldr-sensor-to-arduino?sharecode=2QbqbzS_a1nqubwaqp-hkJEulhR0uKB4gKxb4bc7Dm4
+3.Interfaing pressure sensor to arduino 
+https://www.tinkercad.com/things/d3nS5dG1G8S-interfacing-pressure-sensor-to-arduino?sharecode=AexUhaLGHSoJvaJ5J7RtFfSGyofv5NbP_hJAq-ysK-I

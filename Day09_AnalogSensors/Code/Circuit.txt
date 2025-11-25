@@ -1,0 +1,59 @@
+--> Temperature Sensor TMP36
+**Required Components
+    Arduino UNO
+    Breadboard
+    Resistors
+    LEDs (x3)
+    TMP36 Temperature Sensor
+
+Circuit Diagram Explanation:
+TMP36 Connections:
+    V_out (Pin 2) connects to A0 (analog input pin) on the Arduino.
+    V_in (Pin 1) connects to 5V on the Arduino.
+    GND (Pin 3) connects to GND on the Arduino.
+    LED Connections:
+    The anode of each LED connects to digital pins 2, 3, and 4 on the Arduino.
+    The cathode of each LED connects to a resistor, which then connects to GND on the Arduino.
+
+---
+
+Light Dependent Resistor (LDR)/Photoresistor Sensor
+
+  LDR Terminals:
+    Two Terminals: An LDR has two terminals, which are non-polarized, meaning you can connect them in either direction.
+    Required Components
+    Arduino UNO
+    LED
+    LDR
+    Resistor (10kΩ)
+    Breadboard
+
+Connections:
+LDR Connection:
+Connect one terminal of the LDR to the 5V supply on the Arduino.
+Connect the other terminal of the LDR to the A0 analog input pin on the Arduino.
+Connect a 10kΩ resistor between the LDR terminal (that goes to A0) and GND.
+LED Connection:
+Connect the anode (longer leg) of the LED to the digital pin 9 on the Arduino.
+Connect the cathode (shorter leg) of the LED to GND on the Arduino through a 220Ω resistor.
+
+
+---
+
+Pressure/Force Sensor Interfacing with Arduino
+
+Required Components
+Arduino UNO
+Buzzer
+Force Sensor
+Resistor (10kΩ)
+Breadboard
+
+Connections:
+Force Sensor Connection:
+Connect one terminal of the force sensor to the 5V supply on the Arduino.
+Connect the other terminal of the force sensor to the A0 analog input pin on the Arduino.
+Connect a 10kΩ resistor between the force sensor terminal (that goes to A0) and GND.
+Buzzer Connection:
+Connect the positive terminal of the buzzer to the digital pin 3 on the Arduino.
+Connect the negative terminal of the buzzer to GND on the Arduino.
