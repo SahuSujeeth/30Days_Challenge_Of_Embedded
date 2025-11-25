@@ -492,7 +492,103 @@ attachInterrupt(digitalPinToInterrupt(2), handlerFunction, RISING);
 👉 [tinkercad_link.txt](./Day08_Interrupts%20_appilcations/Code/tinkercad.txt)
 🖼 Wiring Diagrams → `/images/`[iamges](./Day08_Interrupts%20_appilcations/Images/)
 
-nothing has been pushed today because of i have semester exam... see you very soon.....
+
+---
+
+# 🌡️ Day 09 — Sensor Interfacing: Analog Sensors with Arduino
+
+Today’s session focused on working with **analog sensors** that vary resistance or voltage based on environmental conditions. I interfaced three commonly used real-world sensors — **TMP36 temperature sensor, LDR (Light sensor), and Force/Pressure sensor** — and observed how their analog readings can control actuators like LEDs and buzzers.
+
+---
+
+## 📘 What I Learned Today
+
+✔ How analog sensors generate varying voltage  
+✔ Using `analogRead()` to capture real-time sensor values  
+✔ Mapping sensor readings to meaningful outputs (temperature, light level, force)  
+✔ Sensor-based event automation using LEDs and buzzers  
+
+---
+
+## 🔥 Project 1 — TMP36 Temperature Sensor with 3 LEDs
+
+### 🛠 Required Components
+- Arduino UNO  
+- Breadboard  
+- TMP36 Temperature Sensor  
+- LEDs ×3  
+- Resistors  
+- Jumper wires  
+
+### 🔌 Circuit Overview
+
+| TMP36 Pin | Connection |
+|-----------|------------|
+| Pin 1 — V_in | → 5V |
+| Pin 2 — V_out | → A0 |
+| Pin 3 — GND | → GND |
+
+#### LED Connections:
+
+- Digital Pins **2, 3, and 4 → LED anodes**
+- LED cathodes → resistor → GND
+
+Used LEDs as **temperature indicators** (Ex: LOW/MED/HIGH temp).
+
+---
+
+## 🔦 Project 2 — LDR (Light Sensor) with LED Control
+
+### 🛠 Required Components
+- Arduino UNO  
+- LDR (Photoresistor)  
+- 10kΩ resistor  
+- LED + resistor  
+- Breadboard  
+
+### 🔌 Circuit Overview
+
+| Component | Connection |
+|----------|------------|
+| LDR Terminal 1 | → 5V |
+| LDR Terminal 2 | → A0 + 10kΩ resistor to GND |
+| LED Anode | → Digital Pin 9 |
+| LED Cathode | → 220Ω resistor → GND |
+
+Here, the LED turns ON/OFF based on brightness — used as a basic **automatic night lamp system**.
+
+---
+
+## 🏋️ Project 3 — Force/Pressure Sensor with Buzzer
+
+### 🛠 Required Components
+- Arduino UNO  
+- Pressure/Force Sensor  
+- Buzzer  
+- 10kΩ resistor  
+- Breadboard  
+
+### 🔌 Circuit Overview
+
+| Component | Connection |
+|-----------|------------|
+| Force Sensor Terminal 1 | → 5V |
+| Force Sensor Terminal 2 | → A0 + 10kΩ resistor to GND |
+| Buzzer Positive Pin | → Digital Pin 3 |
+| Buzzer Negative Pin | → GND |
+
+Buzzer activates when pressure crosses a threshold (e.g., touch detection, weight sensing).
+
+
+📄 Detailed Notes → `[Notes.md](./Day09_AnalogSensors/Notes.md)`  
+💻 Simulation Links → `simulations/tinkercad_links.txt`  
+👉 [tinkercad_link.txt](./Day09_AnalogSensors/Code/tinkercad.txt)
+🖼 Wiring Diagrams → `/images/`[iamges](./Day09_AnalogSensors/Images/)
+
+---
+
+
+
 
 
 
