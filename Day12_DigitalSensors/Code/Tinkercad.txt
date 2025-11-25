@@ -1,0 +1,8 @@
+1.PIR sensor to arduino
+https://www.tinkercad.com/things/0WMjRWJ26IC-pir-sensor-to-arduino?sharecode=vGBnvSp20fl2GYcvKi-4ofaNlgoVguQyGLYJppl8m9s
+2.Interfacing gas or smoke to arduino
+https://www.tinkercad.com/things/60UqqE5cU8e-interfacing-smoke-sensor-with-arduino?sharecode=CyqS_5pL9_UwjnTfPlK42HZh2e5HG5k7jinXJ7qT3aw
+3.ultra sonic sensor to arduino
+https://www.tinkercad.com/things/9FetowbfiPg-ultra-sonic-sensor-inteerfacing-to-arduino?sharecode=undefined
+4.IR sensor to arduino
+https://www.tinkercad.com/things/8ALT98r2Cg5-interfacing-ir-sensor-to-arduino?sharecode=e8Fznn0skZ-qfUi5DLumkFOgudoYIGSK1b1hvt5ewMM

@@ -587,6 +587,160 @@ Buzzer activates when pressure crosses a threshold (e.g., touch detection, weigh
 
 ---
 
+# 🔍 Day 12 — Digital Sensors Interfacing with Arduino
+
+Today’s focus was on interfacing commonly used **digital sensors** with Arduino and understanding how external environmental conditions trigger system responses. These sensors detect motion, gas levels, distance, or infrared signals and play a key role in automation and IoT-based applications.
+
+---
+
+## 📘 Topics Covered
+
+- PIR Motion Sensor Interfacing
+- Gas Sensor (MQ Series) Interfacing
+- Ultrasonic Distance Sensor (HC-SR04)
+- IR Sensor Interfacing (with basic LED output)
+
+Each sensor demonstrates how digital input signals can control actuators such as LEDs and buzzers based on real-time environmental changes.
+
+---
+
+---
+
+## 1️⃣ PIR Motion Sensor Interfacing
+
+The PIR (Passive Infrared) sensor detects motion based on body heat and outputs a digital HIGH signal when movement is detected.
+
+### 🛠 Required Components
+- Arduino UNO  
+- PIR Sensor  
+- LED  
+- Resistor  
+- Breadboard  
+
+### 🔌 Connections
+
+| PIR Pin | Connection |
+|---------|-----------|
+| VCC | → 5V |
+| GND | → GND |
+| OUT | → Digital Pin 2 |
+
+| LED | Connection |
+|-----|-----------|
+| Anode | → Digital Pin 13 (via resistor) |
+| Cathode | → GND |
+
+📌 **Application Example:** Basic motion detection system (security alarm / automatic lighting).
+
+---
+
+---
+
+## 2️⃣ Gas Sensor (MQ-2) Interfacing
+
+Gas sensors detect smoke, LPG, methane, and combustible gases. The output is analog or digital depending on the module.
+
+### 🛠 Required Components
+- Arduino UNO  
+- Gas Sensor (MQ-2 example)  
+- LED  
+- Buzzer  
+- Resistor  
+- Breadboard  
+
+### 🔌 Connections
+
+| Component | Connection |
+|-----------|------------|
+| MQ-2 VCC | → 5V |
+| MQ-2 GND | → GND |
+| MQ-2 Output (A0) | → A0 |
+
+| LED | → Pin 13 → GND (via resistor)
+| Buzzer | → Pin 3 → GND |
+
+📌 **Application Example:** Fire alarm, gas leak detector.
+
+---
+
+---
+
+## 3️⃣ Ultrasonic Sensor Interfacing (HC-SR04)
+
+This sensor measures distance by transmitting and receiving high-frequency sound pulses.
+
+### 🛠 Required Components
+- Arduino UNO  
+- HC-SR04 Sensor  
+- Connecting Wires  
+
+### 🔌 Pin Roles
+
+| Pin | Description |
+|-----|-------------|
+| VCC | Power supply (5V) |
+| GND | Ground |
+| Trig | Sends ultrasonic pulse |
+| Echo | Receives reflected pulse |
+
+### 🔌 Connections
+
+| Pin | Arduino Pin |
+|------|------------|
+| VCC | 5V |
+| GND | GND |
+| Trig | 10 |
+| Echo | 9 |
+
+📌 **Application Example:** Distance monitoring, parking assist system, obstacle detection for robots.
+
+---
+
+---
+
+## 4️⃣ IR Sensor Interfacing with Arduino
+
+IR sensors detect reflected infrared light and are often used for obstacle detection or remote control decoding.
+
+### 🛠 Required Components
+- Arduino UNO  
+- IR Sensor  
+- LED  
+- 220Ω Resistor  
+- IR Remote (optional)  
+- Breadboard  
+
+### 🔌 Connections
+
+| IR Pin | Arduino |
+|--------|---------|
+| VCC | 5V |
+| GND | GND |
+| OUT | Pin 3 |
+
+| LED | → Pin 7 → Resistor → GND |
+
+📌 **Application Example:** Line followers, IR remote systems, object detection.
+
+---
+
+---
+
+## ✨ Reflection
+
+Today was a key step toward building **automation and smart detection systems**. Each sensor provided a real-world scenario where Arduino reacts to motion, gas levels, distance, or IR signals — forming the basis of home automation, robotics, and IoT applications.
+
+---
+
+🗓️ **Status:** ✔ Completed  
+📄 Notes: `Notes.md`  
+🧪 Simulation: `tinkercad_links.txt`.
+
+---
+
+
+
+
 
 
 

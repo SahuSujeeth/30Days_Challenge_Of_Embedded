@@ -1,0 +1,82 @@
+1.Interfacing a PIR Sensor to Arduino
+In this project, we will interface a PIR sensor with an Arduino to light an LED when motion is detected.
+
+Requirements
+Arduino UNO R3
+PIR Sensor
+Resistor
+LED
+Breadboard
+
+Connection Explanation
+PIR Sensor Connections:
+VCC pin to 5V on Arduino.
+GND pin to GND on Arduino.
+Output pin to digital pin 2 on Arduino.
+LED Connections:
+Anode (longer leg) to digital pin 13 on Arduino through a current-limiting resistor.
+Cathode (shorter leg) to GND on Arduino.
+
+
+2.Gas Sensor Interfacing with Arduino
+
+Requirements
+Arduino UNO
+LED
+Buzzer
+Gas Sensor (e.g., MQ2)
+Resistor
+Breadboard
+
+Connections
+Gas Sensor Connections:
+VCC pin to 5V on Arduino.
+GND pin to GND on Arduino.
+Analog Output (A0) pin to A0 on Arduino.
+LED Connections:
+Anode (longer leg) to digital pin 13 on Arduino through a current-limiting resistor.
+Cathode (shorter leg) to GND on Arduino.
+Buzzer Connections:
+Positive terminal to digital pin 3 on Arduino.
+Negative terminal to GND on Arduino.
+
+3.Ultrasonic Distance Sensor Interfacing with Arduino
+
+Pinout Explanation
+VCC: Connects to the positive supply voltage (5V).
+GND: Connects to the ground of the circuit.
+Trig: Trigger pin for sending the ultrasonic pulse.
+Echo: Echo pin for receiving the reflected pulse.
+
+Connections:
+Ultrasonic Sensor Connection:
+Connect the VCC pin of the ultrasonic sensor to the 5V pin on the Arduino.
+Connect the GND pin of the ultrasonic sensor to the GND pin on the Arduino.
+Connect the Trig pin of the ultrasonic sensor to the digital pin 10 on the Arduino.
+Connect the Echo pin of the ultrasonic sensor to the digital pin 9 on the Arduino.
+
+4.IR Sensor Interfacing with Arduino
+
+Pinout Explanation
+VCC: Connects to the positive supply voltage (typically 5V).
+GND: Connects to the ground of the circuit.
+OUT: The output pin, which sends a digital signal to the Arduino when IR radiation is detected.
+
+Required Components
+Arduino UNO
+IR Sensor
+LED
+220Ω Resistor
+IR Remote
+Breadboard
+Connecting Wires
+
+Connections:
+IR Sensor Connection:
+Connect the VCC pin of the IR sensor to the 5V pin on the Arduino.
+Connect the GND pin of the IR sensor to the GND pin on the Arduino.
+Connect the OUT pin of the IR sensor to the digital pin 3 on the Arduino.
+LED Connection:
+Connect the anode (longer leg) of the LED to the digital pin 7 on the Arduino.
+Connect the cathode (shorter leg) of the LED to a 220Ω resistor.
+Connect the other end of the resistor to GND on the Arduino.
